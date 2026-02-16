@@ -5,7 +5,7 @@ import { ProtectedRoute } from '@/components/ProtectedRoute';
 import { Login } from '@/pages/Login';
 import { Dashboard } from '@/pages/Dashboard';
 import { StudyEditor } from '@/pages/StudyEditor';
-import { PresentationPage } from '@/pages/PresentationPage';
+import FilminasEditor from '@/pages/FilminasEditor';
 
 function App() {
   return (
@@ -39,10 +39,18 @@ function App() {
               }
             />
             <Route
-              path="/studies/:id/presentation"
+              path="/filminas"
               element={
                 <ProtectedRoute>
-                  <PresentationPage />
+                  <FilminasEditor />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/filminas/:studyId"
+              element={
+                <ProtectedRoute>
+                  <FilminasEditor />
                 </ProtectedRoute>
               }
             />

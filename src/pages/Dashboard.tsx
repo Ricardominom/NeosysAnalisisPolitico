@@ -110,13 +110,6 @@ export function Dashboard() {
                         <Button
                           variant="ghost"
                           size="sm"
-                          onClick={() => navigate(`/studies/${study.id}/presentation`)}
-                        >
-                          📊 Presentación
-                        </Button>
-                        <Button
-                          variant="ghost"
-                          size="sm"
                           onClick={() => handleDelete(study.id)}
                         >
                           Eliminar

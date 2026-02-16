@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { EditorSidebar } from '@/components/editor/EditorSidebar';
 import { EditorForm } from '@/components/editor/EditorForm';
 import { PreviewPanel } from '@/components/editor/PreviewPanel';
+import { Presentation } from 'lucide-react';
 
 export function StudyEditor() {
   const { id } = useParams();
@@ -99,6 +100,16 @@ export function StudyEditor() {
               <Button variant="secondary" onClick={handleExportPDF}>
                 Exportar a PDF
               </Button>
+              {isEditMode && id && (
+                <Button
+                  variant="secondary"
+                  onClick={() => navigate(`/filminas/${id}`)}
+                  className="flex items-center gap-2"
+                >
+                  <Presentation size={18} />
+                  Filminas
+                </Button>
+              )}
             </div>
 
             <EditorForm

@@ -27,8 +27,6 @@ export interface BlockBRow {
 export interface Study {
   id: string;
   title: string;
-  municipio?: string;
-  estado?: string;
   createdAt: string;
   updatedAt: string;
   archetype: string;
