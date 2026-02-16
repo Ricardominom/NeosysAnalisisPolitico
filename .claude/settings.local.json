@@ -4,7 +4,8 @@
       "Bash(copy:*)",
       "Bash(npx tsc:*)",
       "Bash(tasklist:*)",
-      "Bash(findstr:*)"
+      "Bash(findstr:*)",
+      "Bash(npm install:*)"
     ]
   }
 }

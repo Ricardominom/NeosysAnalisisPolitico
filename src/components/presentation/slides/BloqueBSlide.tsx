@@ -32,11 +32,11 @@ export const BloqueBSlide: React.FC<BloqueBSlideProps> = ({
       {/* Concentric Circles Visualization */}
       <div className="absolute left-[100px] top-[200px]">
         <div className="relative w-[400px] h-[400px] flex items-center justify-center">
-          {bloqueB.map((index) => {
+          {bloqueB.map((segment, index) => {
             const radius = 240 - index * 30;
             return (
               <div
-                key={index}
+                key={segment.id}
                 className="absolute rounded-full flex items-center justify-center"
                 style={{
                   width: `${radius}px`,
