@@ -41,7 +41,7 @@ export const createText = (
     fontWeight: options.fontWeight || 'normal',
     fill: options.fill || '#000000',
     fontFamily: options.fontFamily || 'Arial, sans-serif',
-    textAlign: options.textAlign || 'left',
+    textAlign: options.textAlign as any || 'left',
     selectable: false,
     evented: false,
   });

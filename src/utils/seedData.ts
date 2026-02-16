@@ -5,6 +5,8 @@ export function getSeedData(): Study[] {
     {
       id: 'seed_1',
       title: 'Estudio de Inteligencia Política Digital — Metepec, Estado de México',
+      municipio: 'Metepec',
+      estado: 'Estado de México',
       createdAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
       updatedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
       archetype: 'Constructor',
@@ -106,6 +108,8 @@ export function getSeedData(): Study[] {
     {
       id: 'seed_2',
       title: 'Análisis Electoral — Toluca Centro',
+      municipio: 'Toluca',
+      estado: 'Estado de México',
       createdAt: new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString(),
       updatedAt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
       archetype: 'Reformador',
