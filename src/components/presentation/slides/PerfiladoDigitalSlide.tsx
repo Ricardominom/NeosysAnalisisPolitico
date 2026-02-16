@@ -12,7 +12,6 @@ export const PerfiladoDigitalSlide: React.FC<PerfiladoDigitalSlideProps> = ({
   municipio,
   estado,
   universoDigital,
-  bloqueA,
   fecha,
 }) => {
   return (

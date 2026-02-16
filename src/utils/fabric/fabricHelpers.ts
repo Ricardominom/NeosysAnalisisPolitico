@@ -1,4 +1,4 @@
-import { Canvas, Rect, Text, Circle, Group } from 'fabric';
+import { Rect, Text, Circle, Group } from 'fabric';
 
 // Dimensiones estándar de slide (16:9)
 export const SLIDE_WIDTH = 1280;

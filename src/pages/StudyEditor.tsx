@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { MainLayout } from '@/layouts/MainLayout';
 import { studiesService } from '@/services/studies.service';
-import type { Study, UncertaintyLevel, Candidate, BlockARow, BlockBRow } from '@/types';
+import type { Study } from '@/types';
 import { Button } from '@/components/ui/Button';
 import { EditorSidebar } from '@/components/editor/EditorSidebar';
 import { EditorForm } from '@/components/editor/EditorForm';

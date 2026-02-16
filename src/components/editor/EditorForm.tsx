@@ -19,7 +19,7 @@ const uncertaintyOptions = [
   { value: 'Alta', label: 'Alta' },
 ];
 
-export function EditorForm({ study, activeSection, updateField, setStudy }: EditorFormProps) {
+export function EditorForm({ study, activeSection, updateField}: EditorFormProps) {
   const updateCandidate = (index: number, field: keyof Candidate, value: string | string[]) => {
     const updated = [...study.candidates];
     updated[index] = { ...updated[index], [field]: value };
