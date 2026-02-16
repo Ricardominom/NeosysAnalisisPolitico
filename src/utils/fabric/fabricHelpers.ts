@@ -31,7 +31,7 @@ export const createText = (
     fontWeight?: string | number;
     fill?: string;
     fontFamily?: string;
-    textAlign?: string;
+    textAlign?: 'left' | 'center' | 'right' | 'justify';
   } = {}
 ): Text => {
   return new Text(text, {
